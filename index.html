@@ -47,6 +47,8 @@
     .demo { position: relative; padding: 36px 20px; border-radius: 28px; background: #121316; border: 1px solid var(--line); }
     .demo::before { content: ""; position: absolute; inset: 10px; border: 1px solid var(--red); border-radius: 20px; opacity: 0.55; pointer-events: none; }
     .demo img { display: block; width: 100%; height: auto; }
+    .video { padding: 0 0 56px; }
+    .video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 14px; border: 1px solid var(--line); background: #0b0c0e; }
     .panel { padding: 0 0 56px; }
     .panel figure { max-width: 760px; margin: 0 auto; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); }
     .panel img { display: block; width: 100%; height: auto; }
@@ -114,6 +116,11 @@
         <figure class="demo">
           <img src="island.png" width="600" height="250" alt="PitchUp Live while listening: a slim pill at the top of the screen with a red stop button, and a bubble below it with the sentence to say and what the other person just said." />
         </figure>
+      </section>
+
+      <section class="video" aria-label="PitchUp Live in 20 seconds">
+        <!-- muted + playsinline are what let browsers autoplay it -->
+        <video src="video.mp4" poster="video-poster.jpg" width="1920" height="1080" autoplay muted loop playsinline preload="auto" aria-label="From the website to a live call: download PitchUp Live, install it, and the island shows the next line to say."></video>
       </section>
 
       <section class="panel" aria-labelledby="panel">
